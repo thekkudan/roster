@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title>First Push</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  	<!-- Bootstrap -->
+  	<link href="/webjars/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen" />
+  	<link href="/webjars/font-awesome/css/font-awesome.min.css" rel="stylesheet" media="screen" />
+  	<link href="/css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+
+  	  <div class="row">
+  	  	<div class="col-md">
+  	  	  <img src="/images/CFF_Logo_vertical_RGB.png" class="img-fluid mx-auto d-block logo" alt="Cloud Foundry Logo" />
+  	  	</div>
+  	  </div>
+
+      <div class="row">
+  	  	<div class="col-md">
+          <hr />
+        </div>
+      </div>
+
+  	  <div class="row">
+  	  	<div class="col-md">
+  	  	  <p class="lead text-secondary text-center">App Details</p>
+  	  	</div>
+  	  </div>
+
+      <div class="row justify-content-md-center">
+        <dl class="row">
+          <dt class="col-sm-3 text-right">App Name</dt>
+          <dd class="col-sm-9" th:text="${appName}">app name</dd>
+          <dt class="col-sm-3 text-right">App GUID</dt>
+          <dd class="col-sm-9" th:text="${appId}">app guid</dd>
+          <dt class="col-sm-3 text-right">App Instance ID</dt>
+          <dd class="col-sm-9" th:text="${instanceId}">app instance id</dd>
+          <dt class="col-sm-3 text-right">App Instance Index</dt>
+          <dd class="col-sm-9" th:text="${instanceIndex}">app instance index</dd>
+          <dt class="col-sm-3 text-right">Routes</dt>
+          <dd class="col-sm-9" th:text="${appUris}">routes</dd>
+          <dt class="col-sm-3 text-right">Database</dt>
+          <dd class="col-sm-9" th:text="${database}">database</dd>
+          <dt class="col-sm-3 text-right">Bound Services</dt>
+          <dd class="col-sm-9" th:text="${boundServices}">bound services</dd>
+          <dt class="col-sm-3 text-right">Profiles</dt>
+          <dd class="col-sm-9" th:text="${profiles}">profiles</dd>
+          <dt class="col-sm-3 text-right">API Endpoint</dt>
+          <dd class="col-sm-9" th:text="${cfApi}">api endpoint</dd>
+          <dt class="col-sm-3 text-right">Space Name</dt>
+          <dd class="col-sm-9" th:text="${spaceName}">space name</dd>
+          <dt class="col-sm-3 text-right">Space ID</dt>
+          <dd class="col-sm-9" th:text="${spaceId}">space id</dd>
+          <dt class="col-sm-3 text-right">&nbsp;</dt>
+          <dd class="col-sm-9"><hr/></dd>
+          <dt class="col-sm-3 text-right">Roster A</dt>
+          <dd class="col-sm-9" th:text="${rosterA}">roster a</dd>
+          <dt class="col-sm-3 text-right">Roster B</dt>
+          <dd class="col-sm-9" th:text="${rosterB}">roster b</dd>
+          <dt class="col-sm-3 text-right">Roster C</dt>
+          <dd class="col-sm-9" th:text="${rosterC}">roster c</dd>
+          <dt class="col-sm-3 text-right">App Version</dt>
+          <dd class="col-sm-9" th:text="${appVersion}">app version</dd>
+        </dl>
+      </div>
+
+    </div>
+    <script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+  </body>
+
+</html>
