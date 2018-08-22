@@ -4,8 +4,5 @@ applications:
    instances: 2
    memory: 1G
    name: roster
-   path: "C:\\MyData\\CloudFoundryTraining\\roster.jar"
-   routes: 
-   - route: roster-rthekkudan.cfapps.io
    services: 
    - mydb
